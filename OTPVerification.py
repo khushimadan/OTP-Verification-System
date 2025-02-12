@@ -1,5 +1,3 @@
-#Task-2 OTP Verification
-
 import random
 import smtplib
 
@@ -38,7 +36,6 @@ def email_verification(receiver_email):
 
 valid_receiver_email=email_verification(receiver_email) #checking if the email is valid or not
 
-password= "diyveevdnbxjvwhj" #password to get into the sender's gmail account
 server.login("khushimadan11@gmail.com",password) #logging into the sender's gmail account
 
 body="Dear "+name+","+"\n"+"\n"+"Your One Time Password (OTP) is "+str(OTP)+"." #generating a message
@@ -85,14 +82,3 @@ else:
         print("Invalid Input!")
 
 server.quit()
-
-
-
-
-
-
-
-
-
-
-
